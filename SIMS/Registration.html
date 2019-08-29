@@ -1,0 +1,142 @@
+
+<html>
+<head>
+	<title>Student entry form</title>
+</head>
+<style>
+body {
+background-position:center;
+background-size:100%;
+background-image: url("su.jpg");
+background-repeat: no-repeat;
+height:100%;
+overflow: auto;
+}
+</style>
+<body style="background-color:gray;"}>
+<form action="Registration.php" method="post" name="StudentRegistration";>
+<center>
+	<table cellpadding="4" width="50%" bgcolor="#F8C471" align="left-side"	cellspacing="4">
+	
+		<tr>
+			<td colspan=2>
+			<center><font size=9.5><b>Registration</b></font></center>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Name</td>
+			<td><input type="text" name="name" id="name" size="30"></td>
+		</tr>
+		<tr>
+			<td>Date of birth</td>
+			<td><input type="text" name="dob" id="dob" size="30"></td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+				<input type="radio" name="gender" value="male" size="10" id="gender">Male
+				<input type="radio" name="gender" value="Female" size="10" id="gender">Female
+			</td>
+		</tr>
+
+		<tr>
+			<td>Father name</td>
+			<td><input type="text" name="fathername" id="fathername" size="30"></td>
+		</tr>
+	
+		<tr>
+			<td>Permanent Address</td>
+			<td><input type="text" name="address" id="paddress" size="30"></td>
+		</tr>
+
+		<tr>
+			<td>Current address</td>
+			<td><input type="text" name="address"id="address" size="30">
+			</td>
+		</tr>
+
+		
+
+		<tr>
+		<td>State</td>
+			<td>
+			<select name="State" id="state">
+				<option value="">DELHI</option>
+				<option value="Mumbai">RAJASTHAN</option>
+				<option value="Goa">KERALA</option>
+				<option value="Patna">GOA</option>
+				<option value="">UTTAR PRADESH</option>
+				<option value="">TAMIL NADU</option>
+				<option value="">MAHARASHTRA</option>
+				<option value="">JAMMU & KASHMIR</option>
+				<option value="">PUNJAB</option>
+				<option value="">ANDRA PRADESH</option>
+				<option value="">GUJARATH</option>
+				<option value="">OTHER</option>
+				<option value="-1" selected>select...</option>
+			</select></td>
+		</tr>
+
+		<tr>
+			<td>Class</td>
+			<td><select name="Course" id="class">
+			<option value="class-1">CLASS-1</option>
+			<option value="class-2">CLASS-2</option>
+			<option value="class-3">CLASS-3</option>
+			<option value="class-4">CLASS-4</option>
+			<option value="class-5">CLASS-5</option>
+			<option value="class-6">CLASS-6</option>
+			<option value="class-7">CLASS-7</option>
+			<option value="class-8">CLASS-8</option>
+			<option value="class-9">CLASS-9</option>
+			<option value="class-10">CLASS-10</option>
+			<option value="class-11">CLASS-11</option>
+			<option value="class-12">CLASS-12</option>
+			<option value="-1" selected>select...</option>
+			</select></td>
+			</tr>
+
+		<tr>
+			<td>District</td>
+			<td><select name="District" id="district">
+			<option value="-1" selected>select..</option>
+			<option value="Nalanda">NALANDA</option>
+			<option value="UP">UP</option>
+			<option value="Goa">GOA</option>
+			<option value="Patna">PATNA</option>
+		</select></td>
+
+		</tr>
+		
+		<tr>
+			<td>PinCode</td>
+			<td><input type="text" name="pincode" id="pincode" size="30"></td>
+		</tr>
+		<tr>
+			<td>EmailId</td>
+			<td><input type="text" name="emailid" id="emailid" size="30"></td>
+		</tr>
+
+		
+		<tr>
+			<td>MobileNo</td>
+			<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+		</tr>
+		<tr>
+			<td>
+				<input type="reset">
+			</td>
+			<td colspan="2">
+				<input type="submit" value="Submit Form" />
+			</td>
+		</tr>
+<tr>
+<td> <a href="Home Page.html"><input type="submit" value="Home Page"></a></td>
+</tr>
+		
+	</table>
+</center>	
+</form>
+</body>
+</html>

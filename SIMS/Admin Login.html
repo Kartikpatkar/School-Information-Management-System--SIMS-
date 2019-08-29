@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Admin Login</title>
+<script type="text/javascript">
+function validateform()
+	{
+		var a=document.forms["Admin_Login"]["username"].value;
+		if(a==null||a=="")
+		{
+			alert("Username field is empty.");
+			return false;
+		}
+		var b=document.forms["Admin_Login"]["password"].value;
+		if(b==null||b=="")
+		{
+			alert("Password field is empty");
+			return false;
+		}
+		return true;
+	}
+</script>
+<style>
+.button {
+  border-radius: 3px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 100px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<style>
+h3{
+color: #FFFFFF;
+}
+body {
+color: #FFFFFF;
+background-position:center;
+background-size:100%;
+background-image: url("admin ka.jpg");
+background-repeat: no-repeat;
+}
+</style>
+<body>
+<form action="check_admin_login.php" method="post" name="Admin_Login" onsubmit="return validateform();">
+	<table cellpadding="10" width="25%" bgcolor="" align="left-side"	cellspacing="10">
+		<tr>
+			<td colspan=2>
+			<center><font size=9.5><b>ADMIN</b></font></center>
+			</td>
+		</tr>
+		<tr>
+			<td><b><h3>Username</h3></b></td>
+			<td><input type="text" name="username" id="username" size="30" placeholder="username";></td>
+		</tr>
+		<tr>
+			<td><b><h3>Password</h3></b></td>
+			<td><input type="password" name="password" id="password" size="30" placeholder="password"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+			<button class="button"><span>login</span></button>
+			</td>
+			<td>
+				<!--#id-button-back{margin-left-bottom:111px}-->
+				
+				
+			</td>
+
+		</tr>	
+	</table>
+</form>
+<table cellpadding="10" width="25%" bgcolor="" align="left-side"	cellspacing="10">
+<tr><td></td><td><center>
+<a href="homepage.php"><button class="button"><span>back</span></button></a>
+</table>
+</td></tr></table></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

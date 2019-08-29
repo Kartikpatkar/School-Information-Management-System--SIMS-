@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Student Login</title>
+<script type="text/javascript">
+function validateform()
+	{
+		var a=document.forms["Studentlogin"]["studentname"].value;
+		if(a==null||a=="")
+		{
+			alert("Name field is empty.");
+			return false;
+		}
+		var b=document.forms["Studentlogin"]["rollno"].value;
+		if(b==null||b=="")
+		{
+			alert("Roll Number field is empty");
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<style>
+body {
+background-position:center;
+background-size:100%;
+background-image: url("sud.jpg");
+background-repeat: no-repeat;
+}
+</style>
+<style>
+body{
+color: WHITE;
+}
+h2{
+color:#F39C12;
+}
+</style>
+<body style="background-color:gray;">
+<form action="check student login.php" method="post" name="Studentlogin" onsubmit="return validateform()";>
+	<center>
+	<table cellpadding="10" width="50%" bgcolor="" align="left-side"	cellspacing="4">
+		<tr>
+			<td colspan=3>
+			
+			<h2><center><font size=10><b>Student Mode</b></font></center></h2>
+			</td>
+		</tr>
+
+		<tr>
+			<td><B><h2>NAME</h2></B></td>
+			<td><input type="text" name="studentname" size="30"></td>
+		</tr>
+		<tr>
+			<td><B><h2>ROLL NO.</h2></B></td>
+			<td><input type="text" name="rollno" size="30"></td>
+		</tr>
+		<tr>
+		<td></td>
+			<td>
+				<input type="submit" value="Log In" >
+			</td>
+		</tr>	
+	</table>
+	</center>
+	
+</form>
+<center>
+<h3><b>Not Register?</b></h3><br>
+<a href="Registration_main.php"><input type="submit" value="Register" ></a>
+<br><br>
+<a href="homepage.php"><input type="submit" value="Back"></a>
+</center>
+</body>
+</html>
